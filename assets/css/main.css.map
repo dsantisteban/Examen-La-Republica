@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACH,UAAU,EAAE,MAAM;;AAIjB,0BAAC;EACA,WAAW,EAAE,IAAI",
+"sources": ["../sass/pages/_columnistas.scss"],
+"names": [],
+"file": "main.css"
+}
