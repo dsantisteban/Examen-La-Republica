@@ -1,43 +1,79 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
-#inicio {
-  background-color: #eaeaea; }
-  #inicio .list1 {
-    font-family: "PT Sans", sans-serif;
+#banner {
+  background-color: #F4F5F7;
+  padding: 1% 0;
+  font-size: 1rem; }
+  #banner ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 3.5%;
     font-size: 12px;
-    font-weight: bold;
-    padding: 2%; }
-    #inicio .list1 a {
-      padding: 2%; }
-  #inicio .suscribe .boton {
-    padding: 5%; }
-    #inicio .suscribe .boton .btn-danger {
-      font-size: 8px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold; }
+  #banner li {
+    display: inline-block;
+    margin-right: 15px; }
+    #banner li a {
+      color: #9398A1;
       font-weight: bold; }
-  #inicio .suscribe .social {
-    padding: 5.2%; }
-    #inicio .suscribe .social a {
-      margin-left: 3.4%;
-      padding: 2%; }
-    #inicio .suscribe .social i:hover {
-      color: #000; }
-    #inicio .suscribe .social .fa-facebook {
-      color: #2a65a1; }
-    #inicio .suscribe .social .fa-twitter {
-      color: #4bb7d9; }
-    #inicio .suscribe .social .fa-google-plus {
-      color: #cf5b4f; }
-    #inicio .suscribe .social .fa-envelope {
-      color: #ffbf00; }
-    #inicio .suscribe .social .fa-rss {
-      color: #ff8000; }
-  #inicio .search {
-    padding: 1%;
-    margin-top: 0.5%;
-    color: #707f8f; }
-    #inicio .search a {
-      font-family: "PT Sans", sans-serif;
-      font-weight: bold;
-      color: #707f8f; }
+  #banner .foundation {
+    margin-top: 1%; }
+
+.social {
+  margin-top: 4%; }
+  .social .suscribe {
+    background-color: #ba1414;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    font-size: 1rem;
+    margin-top: -2%; }
+  .social a {
+    margin-left: 20px;
+    font-size: 1.3rem; }
+    .social a i {
+      font-size: 20px; }
+  .social .fa-facebook {
+    color: #487DA8; }
+  .social .fa-twitter {
+    color: #46B5D9; }
+  .social .fa-google-plus {
+    color: #D90000; }
+  .social .fa-envelope {
+    color: #FFEA56; }
+  .social .fa-rss {
+    color: #E28F32; }
+
+.search {
+  border-left: solid 2px #d7dce1;
+  border-right: solid 2px #d7dce1;
+  width: 21%;
+  margin-top: 2%;
+  margin-left: 9%; }
+  .search input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    background: transparent url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 65px center;
+    border: none;
+    padding: 9px 10px 9px 10px;
+    width: 70px;
+    transition: all .5s; }
+    .search input[type=search]:hover {
+      background: none; }
+    .search input[type=search]:focus {
+      width: 130px;
+      background-color: #fff;
+      border: none;
+      -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+      -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+      box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+    .search input[type=search]::-webkit-input-placeholder {
+      color: #999; }
 
 /*# sourceMappingURL=main.css.map */

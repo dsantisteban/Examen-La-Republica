@@ -1,43 +1,37 @@
-section#inicio
-	.banner.text-center
-		img(src="assets/image/banner_top.jpg", alt="")
+#banner
 	.container
+		img(src="assets/image/banner_top.jpg", alt="_navegan", class="img-responsive")
 		.row
-			.col-md-8.list1
-				a(href="#") LIBERO.PE
-				a(href="#") EL POPULAR.PE
-				a(href="#") FUNDACIÓN GUSTAVO MOHME LLONA
-			.col-md-8.suscribe	 
-				.col-md-3.boton
-					button.btn.btn-danger(type='button') SUSCRIBETE AL BOLETIN
-				.col-md-3.social
-					a(href="#")
-						i.fa.fa-facebook
-					a(href="#")
-						i.fa.fa-twitter
-					a(href="#")
-						i.fa.fa-google-plus
-					a(href="#")
-						i.fa.fa-envelope
-					a(href="#")
-						i.fa.fa-rss
-				.col-md-2.search
-					a(href="#") BUSCAR 
-					i.fa.fa-search
+			.col-lg-5.col-md-6.col-sm-6-col-xs-6.foundation
+				ul
+					li: a(href="http://www.libero.pe/") libero.pe
+					li: a(href="http://www.elpopular.pe/") elpopular	
+					li: a(href="http://fundacionmohme.org/") fundación gustavo mohme llona
+			.col-lg-7.col-md-6.col-sm-6-col-xs-6
+				.social.col-lg-8.col-md-6.col-sm-6-col-xs-6
+					.suscribe.btn suscríbete al boletín
+					a(href="https://www.facebook.com/larepublicape/?fref=ts"): i.fa.fa-facebook
+					a(href="https://twitter.com/larepublica_pe?lang=es"): i.fa.fa-twitter
+					a(href="https://plus.google.com/+larepublica/posts"): i.fa.fa-google-plus
+					a(href="https://www.facebook.com/larepublicape/?fref=ts"): i.fa.fa-envelope
+					a(href="https://www.facebook.com/larepublicape/?fref=ts"): i.fa.fa-rss
+				.search.col-lg-4.col-md-6.col-sm-6-col-xs-6
+					form
+						input(type='search', placeholder='BUSCAR')
 header
 	.container
 		.row
-			.col-md-6
+			.col-lg-5
 				img(src="assets/image/logo-la-republica.jpg", alt="logo-la-republica")
-			.col-md-4
+			.col-lg-2
 				.sunday HABLA LA LIDERESA DEL NACIONALISMO
-			.col-md-6
-				.col-md-4
+			.col-lg-5
+				.col-lg-3
 					img(src="assets/image/img_editorial_text.jpg", alt="")
-				.col-md-8
+				.col-lg-7
 					h4 La Corrupción, los orígenes
 					h5 por: Gustavo Mohme Llona	
-				.col-md-4
+				.col-lg-2
 					img(src="assets/image/img_author.jpg", alt="")
 	.container
 		.row

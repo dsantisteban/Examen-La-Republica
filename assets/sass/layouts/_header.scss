@@ -1,58 +1,92 @@
-#inicio{
-	background-color: $background-gray;
-	.list1{
+#banner {
+  	background-color: #F4F5F7;
+  	padding: 1% 0;
+  	font-size: 1rem;
+  	ul {
+    	list-style-type: none;
+    	padding-left: 0;
+    	text-transform: uppercase;
+    	margin-bottom: 0;
+    	margin-top: 3.5%;
+    	font-size: 12px;
+    	font-family: $bodyfont;
+    	font-weight: bold; 
+	}
+   	li {
+    	display: inline-block;
+    	margin-right: 15px;
+    	a {
+      		color: #9398A1;
+      		font-weight: bold; 
+      	}
+    }
+    .foundation{
+    	margin-top: 1%;
+    }
+}
+.social {
+  	margin-top: 4%;
+  	.suscribe{
+    	background-color: $brand-primary;
+    	color: #fff;
+    	text-transform: uppercase;
+    	padding: 3px 5px;
+    	font-size: 1rem;
+    	margin-top: -2%;
+    }
+  	a {
+    	margin-left: 20px;
+    	font-size: 1.3rem;
+    	i{
+    		font-size: 20px;
+    	}
+    }
+  	.fa-facebook {
+    	color: #487DA8;
+    }
+  	.fa-twitter {
+    	color: #46B5D9; 
+    }
+  	.fa-google-plus {
+    	color: #D90000; 
+    }
+  	.fa-envelope {
+    	color: #FFEA56; 
+    }
+  	.fa-rss {
+    	color: #E28F32; 
+    }
+}
+.search{
+	border-left: solid 2px #d7dce1;
+	border-right: solid 2px #d7dce1;
+	width: 21%;
+	margin-top: 2%;
+	margin-left: 9%;
+	input[type=search] {
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
 		font-family: $bodyfont;
-		font-size: 12px;
 		font-weight: bold;
-		padding: 2%;
-		a{
-			padding: 2%;
+		font-size: 1.4em;
+		background: transparent url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 65px center;
+		border:none;
+		padding: 9px 10px 9px 10px;
+		width: 70px;	
+		transition: all .5s;
+		&:hover{
+			background: none;
 		}
-	}
-	.suscribe{
-		.boton{
-			padding: 5%;
-			.btn-danger{
-				font-size: 8px;
-				font-weight: bold;
-			}
+		&:focus {
+		width: 130px;
+		background-color: #fff;
+		border:none;
+		-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+		-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+		box-shadow: 0 0 5px rgba(109,207,246,.5);
 		}
-		.social{
-			padding: 5.2%;
-			a{
-				margin-left: 3.4%;
-				padding:2%;
-			}
-			i{
-				&:hover{
-					color: #000;
-				}
-			}
-			.fa-facebook{
-				color: #2a65a1;
-			}
-			.fa-twitter{
-				color: #4bb7d9;
-			}
-			.fa-google-plus{
-				color: #cf5b4f;
-			}
-			.fa-envelope{
-				color: #ffbf00;
-			}
-			.fa-rss{
-				color: #ff8000;		
-			}
-		}
-	}
-	.search{
-		padding: 1%;
-		margin-top: 0.5%;
-		color: #707f8f;
-		a{
-			font-family: $bodyfont;
-			font-weight: bold;
-			color: #707f8f;
+		&::-webkit-input-placeholder {
+		color: #999;
 		}
 	}
 }
