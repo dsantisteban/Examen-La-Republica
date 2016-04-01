@@ -3,7 +3,7 @@ html(lang='es-PE')
   include elements/head  
   body
     include helpers/mixins
-    section.block.text-center
+    section.block
         .container
             .row
                 h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
@@ -15,9 +15,9 @@ html(lang='es-PE')
                     +blocklista("bullet.gif","Hace 12 minutos") 
                     +blocklista("bullet.gif","POLÍTICA")
             .row 
-                .col-md-8
+                .col-md-6
                     +blockimage("img_grid_principal.jpg",1,"JNE impulsará campaña a favor  de la aprobación de la Reforma Electoral") 
-                .col-md-8
+                .col-md-6
                     +blockimage("img_grid_secundario.jpg",2,"Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3000 millones | FOTOS")
                     +blockimage("img_grid_secundario.jpg",2,"Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO")
             .row
@@ -28,16 +28,42 @@ html(lang='es-PE')
                         li(data-target='#myCarousel', data-slide-to='2')
                         li(data-target='#myCarousel', data-slide-to='3')
                     .carousel-inner(role='listbox')
-                        .item.active  fffff
-                        .item fffff
-                        .item fffff
-                        .item fffff
-                    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-                        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                        span.sr-only Previous
-                     a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-                        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                        span.sr-only Next
+                        .item.active
+                            .row
+                                +imgslide("img-columnistas.jpg","img_blogueros.jpg")
+    
+                        .item
+                            .row
+                                +imgslide("img-columnistas.jpg","img_blogueros.jpg")
+            .row
+                .col-md-4
+                    +todosobre("img_especiales.jpg","Mercado de pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos","Todo sobre Mercaso de pases 2015")
+                    +todosobre("img_especiales.jpg","champions League","¿Podrá el Real Madrid conseguir la Undécima?","Todo sobre Champions League")
+
+                .col-md-4
+                    +todosobre("img_especiales_aside.jpg","Super ","Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes","Todo sobre Régimen laboral juvenil")
+                    +todosobre("img_especiales_aside.jpg","Super Bowl","Super Bowl XLIX:New Englan Patriots se consagró campión la NFL al ganar 28-24 a Seahawks | VIDEO","Todo sobre Super Bowl")
+
+                .col-md-4
+                    +addimage("banner-aside-home.jpg")
+            .row
+                h4 ÚLTIMAS NOTICIAS 
+                    a(href="")
+                        i.fa.fa-angle-double-down
+                +noticias("img-news-grid.jpg","bullet.gif","ico_comment.png","La actriz Emma Watson protagonizará 'La Bella y la Bestia'| VIDEO","La Actriz Emma Watson fue confirmada por Disney como la protagonista de 'La Bella y la Bestia' en la versión de carne y hueso","10","ESPÉCTACULOS","fa fa-youtube-play",1)
+
+
+
+
+
+
+                        
+                        
+
+
+
+
+
     include elements/script
 
                  

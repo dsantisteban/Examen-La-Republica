@@ -10,9 +10,87 @@ mixin blockimage(img,h,texto)
                 h3= texto 
             else if h==2
                 h4= texto 
-mixin blocklista(img,texto)                        
+mixin blocklista(img,texto)        
     li
         h6
              span
                 +addimage(img)
                 span= texto
+
+
+mixin imgslide(img1,img2)
+    .col-xs-2.text-center
+        +addimage(img1)
+        h6 Mario Vargas Llosa
+        h5 Megarrenincia apulpinante
+    .col-xs-2.text-center
+        +addimage(img2)
+        h6 Augusto Álvarez Rodrich 
+        h5 Respuesta a una derrota estridente
+    .col-xs-2.text-center
+        +addimage(img1)
+        h6 Mario Vargas Llosa
+        h5 Megarrenincia apulpinante
+    .col-xs-2.text-center
+        +addimage(img2)
+        h6 Augusto Álvarez Rodrich 
+        h5 Respuesta a una derrota estridente
+    .col-xs-2.text-center
+        +addimage(img1)
+        h6 Mario Vargas Llosa
+        h5 Megarrenincia apulpinante
+    .col-xs-2.text-center
+        +addimage(img2)
+        h6 Augusto Álvarez Rodrich 
+        h5 Respuesta a una derrota estridente
+mixin todosobre(img,texto1,texto2,texto3)
+    .tscdro
+        h4= texto1
+        .tstexto
+            +addimage(img)
+            .tsh3
+            h4= texto2
+        h5= texto3
+mixin gif-icon(img,icon,visble)
+    if visible=1
+        +addimage(img)
+        i(class=icon)
+    else 
+        |         
+
+mixin newsocial(img2,img3,texto3)   
+        h6
+            span
+                +addimage(img2)
+                +addimage(img3)
+                span= texto3 
+mixin noticias(img1,img,img3,texto,texto1,texto2,texto3,icon,visible)
+    .media
+        h6 Hace 1 hora 12 mins
+        h4= texto
+        .media-left.media-middle
+            +addimage(img1)
+        .media-body
+            h5= texto1 
+            ul.list-unstyled.list-inline
+                li
+                    i.fa.fa-facebook
+                    i.fa.fa-twitter
+                    i.fa.fa-google-plus    
+                li
+                    +newsocial(img,img3,texto2)
+                li
+                    +blocklista(img,texto3)
+                li
+                    +gif-icon(img,icon,visible)
+
+
+        
+
+
+
+
+
+
+    
+
