@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+#inicio {
+  background-color: #eaeaea; }
+  #inicio .list1 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2%; }
+    #inicio .list1 a {
+      padding: 2%; }
+  #inicio .suscribe .boton {
+    padding: 5%; }
+    #inicio .suscribe .boton .btn-danger {
+      font-size: 8px;
+      font-weight: bold; }
+  #inicio .suscribe .social {
+    padding: 5.2%; }
+    #inicio .suscribe .social a {
+      margin-left: 3.4%;
+      padding: 2%; }
+    #inicio .suscribe .social i:hover {
+      color: #000; }
+    #inicio .suscribe .social .fa-facebook {
+      color: #2a65a1; }
+    #inicio .suscribe .social .fa-twitter {
+      color: #4bb7d9; }
+    #inicio .suscribe .social .fa-google-plus {
+      color: #cf5b4f; }
+    #inicio .suscribe .social .fa-envelope {
+      color: #ffbf00; }
+    #inicio .suscribe .social .fa-rss {
+      color: #ff8000; }
+  #inicio .search {
+    padding: 1%;
+    margin-top: 0.5%;
+    color: #707f8f; }
+    #inicio .search a {
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      color: #707f8f; }
+
+/*# sourceMappingURL=main.css.map */

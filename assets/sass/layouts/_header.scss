@@ -1,0 +1,58 @@
+#inicio{
+	background-color: $background-gray;
+	.list1{
+		font-family: $bodyfont;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 2%;
+		a{
+			padding: 2%;
+		}
+	}
+	.suscribe{
+		.boton{
+			padding: 5%;
+			.btn-danger{
+				font-size: 8px;
+				font-weight: bold;
+			}
+		}
+		.social{
+			padding: 5.2%;
+			a{
+				margin-left: 3.4%;
+				padding:2%;
+			}
+			i{
+				&:hover{
+					color: #000;
+				}
+			}
+			.fa-facebook{
+				color: #2a65a1;
+			}
+			.fa-twitter{
+				color: #4bb7d9;
+			}
+			.fa-google-plus{
+				color: #cf5b4f;
+			}
+			.fa-envelope{
+				color: #ffbf00;
+			}
+			.fa-rss{
+				color: #ff8000;		
+			}
+		}
+	}
+	.search{
+		padding: 1%;
+		margin-top: 0.5%;
+		color: #707f8f;
+		a{
+			font-family: $bodyfont;
+			font-weight: bold;
+			color: #707f8f;
+		}
+	}
+}

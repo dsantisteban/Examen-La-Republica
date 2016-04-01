@@ -1,27 +1,30 @@
-header
+section#inicio
 	.banner.text-center
 		img(src="assets/image/banner_top.jpg", alt="")
 	.container
 		.row
-			.col-md-6
+			.col-md-8.list1
 				a(href="#") LIBERO.PE
 				a(href="#") EL POPULAR.PE
 				a(href="#") FUNDACIÓN GUSTAVO MOHME LLONA
-			.col-md-6
-				button.btn.btn-lg.btn-danger(type='button') SUSCRIBETE AL BOLETIN
-				a(href="#")
-					i.fa.fa-facebook
-				a(href="#")
-					i.fa.fa-twitter
-				a(href="#")
-					i.fa.fa-google-plus
-				a(href="#")
-					i.fa.fa-rss
-			.col-md-4
-				.search
-					h3 
-						a(href="#") BUSCAR 
-						i.fa.fa-search
+			.col-md-8.suscribe	 
+				.col-md-3.boton
+					button.btn.btn-danger(type='button') SUSCRIBETE AL BOLETIN
+				.col-md-3.social
+					a(href="#")
+						i.fa.fa-facebook
+					a(href="#")
+						i.fa.fa-twitter
+					a(href="#")
+						i.fa.fa-google-plus
+					a(href="#")
+						i.fa.fa-envelope
+					a(href="#")
+						i.fa.fa-rss
+				.col-md-2.search
+					a(href="#") BUSCAR 
+					i.fa.fa-search
+header
 	.container
 		.row
 			.col-md-6
@@ -92,5 +95,5 @@ header
 					li
 						a(href="#") Alianza Lima
 					li
-						a(href="#") Balón
+						a(href="#") Balón	
 				a(data-slide="next" href="#media" class="right carousel-control") >
