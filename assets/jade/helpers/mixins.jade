@@ -1,0 +1,18 @@
+//All
+mixin addimage(img)
+    img(src="assets/image/"+img, alt="")
+//Section Block
+mixin blockimage(img,h,texto) 
+    .blockimg
+        +addimage(img)
+        .blocktext
+            if h==1
+                h3= texto 
+            else if h==2
+                h4= texto 
+mixin blocklista(img,texto)                        
+    li
+        h6
+             span
+                +addimage(img)
+                span= texto
