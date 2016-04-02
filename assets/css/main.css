@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+* {
+  font-family: "PT Sans", sans-serif; }
+
 #banner {
   background-color: #F4F5F7;
   padding: 1% 0;
@@ -75,5 +78,25 @@
       box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
     .search input[type=search]::-webkit-input-placeholder {
       color: #999; }
+
+#intro .logo {
+  padding: 3%; }
+#intro .quotes {
+  margin-top: 2.5%; }
+  #intro .quotes .sunday {
+    border: solid 2px #eaeaea;
+    border-bottom: solid 2px #941010;
+    padding: 0 10px 0 10px;
+    float: right; }
+    #intro .quotes .sunday p {
+      font-weight: bold;
+      font-size: 14px; }
+    #intro .quotes .sunday span {
+      background-color: #941010;
+      padding: 3%;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      top: -10px; }
 
 /*# sourceMappingURL=main.css.map */
