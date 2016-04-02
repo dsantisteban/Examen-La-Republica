@@ -10,3 +10,42 @@
 						input#formGroupInputLarge.form-control(type='text', placeholder='Correo Electronico')
 						input#formGroupInputLarge.form-control(type='text', placeholder='Teléfonos')
 						label (Opcional)
+	.row
+		.col-lg-10.col-lg-offset-1
+			h2 Elija un Destinatario
+			.col-lg-6
+				.radio
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						|     Sugerencia para el sitio Web
+				.radio
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						|     Dirección Periodística
+				.radio
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						|     Direccion Comercial
+				.radio
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						|     Cartas al director
+				.radio
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						|     Promociones y productos del diario
+				.radio
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						|     Archivo Periodistico
+			.col-lg-6
+				p (Ej: funcionamiento y mejoras para el sitio)
+				p (Ej: Sugerencia de Nota de prensa ) 
+				p (Ej: Publicidad en diarios o sitios Web)
+				p (Ej: denuncias, comentarios e impresiones)
+				p (Ej: Promociones, tablet, etc)
+				p (Ej: Ediciones Impresas/ Otros)
+	.row
+		.col-lg-10.col-lg-offset-1.text-center
+			textarea.form-control(rows='3', placeholder="Mensaje")
+			a(href="#") Enviar
