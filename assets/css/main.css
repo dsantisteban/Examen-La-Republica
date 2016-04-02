@@ -99,4 +99,37 @@
       position: relative;
       top: -10px; }
 
+header .navbar-nav {
+  background-color: #ba1414;
+  border-radius: 5px; }
+  header .navbar-nav li a {
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-right: solid 3px rgba(115, 10, 10, 0.88); }
+    header .navbar-nav li a:hover {
+      background-color: rgba(115, 10, 10, 0.88);
+      color: #fff; }
+header .list2 {
+  margin-top: 2%; }
+  header .list2 .tema {
+    background-color: #111417;
+    color: #fff;
+    width: 12%; }
+    header .list2 .tema h4 {
+      font-size: 14px;
+      font-family: "Oswald", sans-serif; }
+  header .list2 .lista {
+    background-color: #ba1414;
+    width: 88%; }
+    header .list2 .lista .carousel-control {
+      background-image: none; }
+    header .list2 .lista .left {
+      float: left; }
+    header .list2 .lista a {
+      color: #fff;
+      padding: 1.3%; }
+
 /*# sourceMappingURL=main.css.map */

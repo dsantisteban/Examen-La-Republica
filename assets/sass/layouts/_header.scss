@@ -118,4 +118,53 @@
 			}
 		}
 	}
+	.editorial{
+
+	}
+}
+header{
+	.navbar-nav{
+		background-color: $brand-primary;
+		border-radius: 5px;
+		li{
+			a{
+				color: #fff;
+				font-size: 11px;
+				font-weight: bold;
+				padding-top: 8px;
+    			padding-bottom: 8px;
+    			border-right: solid 3px rgba(115, 10, 10, 0.88);
+    			&:hover{
+    				background-color: rgba(115, 10, 10, 0.88);
+    				color: #fff;
+    			}
+			}
+		}
+	}
+	.list2{
+		margin-top: 2%;
+		.tema{
+			background-color: #111417;
+			color: #fff;
+			width: 12%;
+			h4{
+				font-size: 14px;
+				font-family: $title;
+			}
+		}
+		.lista{
+			background-color: $brand-primary;
+			width:88%;
+			.carousel-control{
+				background-image: none;
+			}
+			.left{
+				float: left;
+			}
+			a{
+				color: #fff;
+				padding: 1.3%;
+			}
+		}
+	}
 }
