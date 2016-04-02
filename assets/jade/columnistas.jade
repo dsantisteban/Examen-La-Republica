@@ -6,34 +6,302 @@ html(lang='es-PE')
 		link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
 		link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", type='text/css', href="assets/css/disd/font-awesome.min.css")
-		link(rel="stylesheet", type='text/css', href="assets/css/disd/bootstrap.min.css")
-		link(rel="stylesheet", type='text/css', href="assets/css/disd/slick.css")
+		link(rel="stylesheet", type='text/css', href="assets/css/dist/bootstrap2.min.css")
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
 		link(rel="stylesheet", type='text/css', href="assets/css/disd/slick-theme.css")
-		link(rel="stylesheet", type='text/css', href="assets/css/main.css")
-		acript(src='http//code.jquery.com/jquery-1.2.1.min.js')
-		acript(src='http//code.jquery.com/jquery-min.js')
-		acript(type='text/javascript', src='js/bootstrap.min.js')
-		acript(type='text/javascript', src='js/slick.min.js')
-		acript(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
-		acript(type='text/javascript', src='js/modernizr.custom.68172.js')
-		acript(type='text/javascript', src='js/respond.js')
+		link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+		script(src='http//code.jquery.com/jquery-1.2.1.min.js')
+		script(src='http//code.jquery.com/jquery-min.js')
+		script(type='text/javascript', src='js/Bootstrap.min.js')
+		script(type='text/javascript', src='js/slick.min.js')
+		script(type='text/javascript', src='js/Bootstrap-hover-dropdown.min.js')
+		script(type='text/javascript', src='js/modernizr.custom.68172.js')
+		script(type='text/javascript', src='js/respond.js')
 	body
-		
-		mixin text-1col
-			small Lunes,14 de julio de 2015
-			p El gol de la muerte
-		mixin column1-augusto
-			img(src="assets/image/img_author_columnista.jpg")
-			p Augusto Álvarez Rodrich
-			h4 Claro y directo
-		section.columnistas
+		mixin imagen-1
+			.pull-left
+				img(src="assets/image/img_author_columnista.jpg" alt="...")
+		mixin imagen-2
+			.pull-left
+				img(src="assets/image/img-columnistas.jpg" alt="...")
+		mixin imagen-3
+			.pull-left
+				img(src="assets/image/img_author_columnista.jpg" alt="...")
+		mixin text-1-fecha
+			.text-center
+				small Lunes,14 de julio de 2015
+				h4 El gol de la muerte
+		mixin text-2-fecha
+			.text-center
+				small Lunes,14 de julio de 2015
+				h4 Dios ha muerto... tengo las manos cubiertas de sangre
+		mixin text-3-fecha
+			.text-center
+				small Lunes, 14 de julio de 2015
+				h4 ¿Cuál es tu queso favorito?
+		mixin column-augusto
+			.box-team.img-thumbnail
+				.caption
+					+text-1-fecha
+					.box-columnistas-1
+						+imagen-1
+						small Augusto Álvarez Rodrich
+						p Claro y directo
+		mixin column-mirko
+			.box-team.img-thumbnail
+				.caption
+					+text-2-fecha
+					.box-columnistas-1
+						+imagen-2
+						small Mirko Lauer
+						p Observador
+		mixin column-aldo
+			.box-team.img-thumbnail
+				.caption
+					+text-3-fecha
+					.box-columnistas-1
+						+imagen-3
+						small Aldo Miyashiro
+						p Chino de mi barrio
+		mixin column-francisco
+			.box-team.img-thumbnail
+				.caption
+					+text-1-fecha
+					.box-columnistas-1
+						+imagen-1
+						small Francisco Durand
+						p Tiro al blanco
+		mixin column-humberto
+			.box-team.img-thumbnail
+				.caption
+					+text-2-fecha
+					.box-columnistas-1
+						+imagen-2
+						small Humberto Campodónico
+						p Cristal de Mira
+		mixin column-javier
+			.box-team.img-thumbnail
+				.caption
+					+text-3-fecha
+					.box-columnistas-1
+						+imagen-3
+						small Javíer Ágreda
+						p Jaque Perpetuo
+		mixin img(photo)
+			case photo
+				when "img1"
+					.pull-left
+						img(src="assets/image/img_author_columnista.jpg" alt="...")
+				when "img2"
+					.pull-left
+						img(src="assets/image/img_blogueros.jpg" alt="...")
+		mixin datos(photo, title, parrafo)
+			.box-columnistas		
+				+img(photo)
+				small= title
+				p= parrafo
+		section#ultimos-columnistas
 			.container
 				.row
-					h1 Columnistas
-					h3 LO ÚLTIMO EN COLUMNISTAS 
-						i.fa.fa-angle-double-down
+					.col-xs-16
+						h1 Columnistas
+						h3 LO ÚLTIMO EN COLUMNISTAS 
+							img(src="assets/image/double-arrow-bottom.png") 
+				i.fa.fa-angle-double-down
 				.row
-					.col-md-6
-						.thumbnails
-							+text-1col
-							+column1-augusto
+					.col-md-1
+					.col-md-5.col-xs-5.col-lg-5
+						+column-augusto
+					.col-md-5.col-xs-5.col-lg-5
+						+column-mirko
+					.col-md-5.col-xs-5.col-lg-5
+						+column-aldo
+				.row
+					.col-md-1
+					.col-md-5.col-xs-5.col-lg-5
+						+column-francisco
+					.col-md-5.col-xs-5.col-lg-5
+						+column-humberto
+					.col-md-5.col-xs-5.col-lg-5
+						+column-javier
+				.row
+					.col-md-1
+					.col-md-5.col-xs-5.col-lg-5
+						+column-augusto
+					.col-md-5.col-xs-5.col-lg-5
+						+column-mirko
+					.col-md-5.col-xs-5.col-lg-5
+						+column-aldo
+				.row
+					.col-md-1
+					.col-md-5.col-xs-5.col-lg-5
+						+column-francisco
+					.col-md-5.col-xs-5.col-lg-5
+						+column-humberto
+					.col-md-5.col-xs-5.col-lg-5
+						+column-javier
+				.row.text-center
+					a(href="#" class="bt-fr")
+						button TODAS LAS COLUMNAS
+		section#todo-columnistas
+			.container
+				.row
+					h3 TODOS LOS COLUMNISTAS 
+						img(src="assets/image/double-arrow-bottom.png")
+					span.fa.fa-angle-double-down
+				.nav-pager.row
+					.col-xs-16
+						ul.pager.disabled 
+							li
+								a(href="#" class="bt-1") TODOS
+							li
+								a(href="#") ABD
+							li
+								a(href="#") DEF
+							li
+								a(href="#") GHI
+							li
+								a(href="#") JKL
+							li
+								a(href="#") MNO
+							li
+								a(href="#") PQRS
+							li
+								a(href="#") TUV
+							li
+								a(href="#") WXYZ
+			.container
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco durand","Tiro al blanco")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Humberto Campodónico","Cristal de Mira")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Jaque Perpetuo")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Jaque Perpetuo"
+						)
+				.row
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Francisco Durand","Delito de Opinión")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img2","Javier Ágreda","Mirada externa")
+					.col-md-4.col-lg-4.col-xs-8
+						+datos("img1","Javier Ágreda","Defensa")
