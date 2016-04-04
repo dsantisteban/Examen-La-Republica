@@ -29,8 +29,15 @@
     #banner li a {
       color: #9398A1;
       font-weight: bold; }
+      #banner li a:hover {
+        color: #ba1414;
+        text-decoration: none;
+        font-weight: bold; }
   #banner .foundation {
     margin-top: 1%; }
+  @media (min-width: 200px) {
+    #banner {
+      display: none; } }
 
 .social {
   margin-top: 4%; }
@@ -105,10 +112,53 @@
       font-weight: bold;
       position: relative;
       top: -10px; }
+#intro .editorial {
+  padding: 10px 0;
+  position: relative;
+  margin-top: 10px; }
+  #intro .editorial .image {
+    background-color: #2c3238;
+    padding: 6px 4px;
+    position: absolute;
+    width: 100%; }
+  #intro .editorial .title {
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    left: 7%;
+    padding: 2% 3% 3% 0%;
+    width: 84%;
+    text-align: center;
+    height: 62px; }
+  #intro .editorial p:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 19px; }
+  #intro .editorial p:nth-child(2) {
+    font-style: italic;
+    margin-bottom: 0; }
+  #intro .editorial img:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    right: -1px; }
+@media (min-width: 200px) {
+  #intro .logo img {
+    margin: 0 auto; }
+  #intro .quotes {
+    width: 50%; }
+  #intro .editorial {
+    width: 50%;
+    float: right;
+    margin-top: -70px; } }
 
 header .navbar-nav {
   background-color: #ba1414;
   border-radius: 5px; }
+  @media (min-width: 200px) {
+    header .navbar-nav {
+      width: 100%; } }
   header .navbar-nav li a {
     color: #fff;
     font-size: 11px;
@@ -129,10 +179,16 @@ header .list2 {
     header .list2 .tema h4 {
       font-size: 14px;
       font-family: "Oswald", sans-serif; }
+    @media (min-width: 200px) {
+      header .list2 .tema {
+        display: none; } }
   header .list2 .lista {
     background-color: #e4e7ea;
     width: 88%;
     padding: 0.8%; }
+    @media (min-width: 200px) {
+      header .list2 .lista {
+        display: none; } }
     header .list2 .lista .carousel-control {
       background-image: none;
       width: 1%;
@@ -152,6 +208,11 @@ footer {
   padding: 3%; }
   footer .logo {
     margin-top: 11%; }
+    @media (min-width: 200px) {
+      footer .logo {
+        text-align: center; }
+        footer .logo img {
+          margin: 0 auto; } }
     footer .logo h3 {
       font-weight: bold;
       font-family: "PT Sans", sans-serif; }
@@ -161,11 +222,16 @@ footer {
         margin-bottom: 8%; }
   footer .content {
     border-left: solid 2px gray; }
+    @media (min-width: 200px) {
+      footer .content {
+        display: none; } }
   footer .lista {
     list-style-type: none;
-    padding-left: 2%; }
+    padding-left: 2%;
+    padding-right: 0; }
     footer .lista a {
-      color: #535353; }
+      color: #535353;
+      font-size: 13px; }
       footer .lista a:hover {
         color: #ba1414;
         text-decoration: none;

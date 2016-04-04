@@ -3,6 +3,12 @@ footer{
 	padding: 3%;
 	.logo{
 		margin-top: 11%;
+		@media (min-width: 200px){
+			text-align: center;
+			img{
+				margin: 0 auto;
+			}
+		}
 		h3{
 			font-weight: bold;
 			font-family: $bodyfont;
@@ -16,12 +22,17 @@ footer{
 	}
 	.content{
 		border-left: solid 2px gray;
+		@media (min-width: 200px){
+			display: none;
+		}
 	}
 	.lista{
 		list-style-type: none;
 		padding-left: 2%;
+		padding-right: 0;
 		a{
 			color: #535353;
+			font-size: 13px;
 			&:hover{
 				color: $brand-primary;
 				text-decoration: none;
