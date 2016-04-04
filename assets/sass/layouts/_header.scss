@@ -1,6 +1,13 @@
 *{
 	font-family: $bodyfont;
 }
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: $brand-primary;
+    border: none;
+}
+.dropdown-menu{
+	background-color: $brand-primary;
+}
 #banner {
   	background-color: #F4F5F7;
   	padding: 1% 0;
@@ -147,6 +154,7 @@ header{
 			background-color: #111417;
 			color: #fff;
 			width: 12%;
+			padding: 0.2%;
 			h4{
 				font-size: 14px;
 				font-family: $title;
@@ -158,6 +166,9 @@ header{
 			padding: 0.8%;
 			.carousel-control{
 				background-image: none;
+				width: 1%;
+    			margin-left: -9px;
+    			margin-top: -5px
 			}
 			.left{
 				float: left;

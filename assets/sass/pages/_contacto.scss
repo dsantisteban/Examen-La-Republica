@@ -1,0 +1,73 @@
+#contact{
+	h1{
+		font-family: $bodyfont;
+		font-weight: bold;
+		color: 	#000;
+		font-size: 60px;
+		margin: 4% 0 4% 0;
+	}
+	p{
+		font-size: 16.5px;
+		text-align: justify;
+		margin-bottom: 6%;
+	}
+	form{
+		input{
+			border:1px solid #969696;
+			margin-bottom: 5%;
+			background-color: #eeeeee;
+			box-shadow: inset 5px 4px 8px 2px #969696;
+			-webkit-box-shadow: inset 5px 4px 8px 2px #969696;
+			-moz-box-shadow: inset 5px 4px 8px 2px #969696;
+			-o-box-shadow: inset 5px 4px 8px 2px #969696;
+		}
+		.m0{
+			margin-bottom: 0;
+		}
+	}
+	.opciones{
+		margin-bottom: 4%;
+		h4{
+			margin-left: 4%;
+			font-family: $bodyfont;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.ejemplos{
+			margin-top: 12px;
+			.ejem{
+				font-size: 12px;
+				margin-bottom: 2%;
+			}
+		}
+	}
+	.send{
+		margin-bottom: 5%;
+		textarea{
+			border:1px solid #969696;
+			margin-bottom: 5%;
+			background-color: #eeeeee;
+			box-shadow: inset 5px 4px 8px 2px #969696;
+			-webkit-box-shadow: inset 5px 4px 8px 2px #969696;
+			-moz-box-shadow: inset 5px 4px 8px 2px #969696;
+			-o-box-shadow: inset 5px 4px 8px 2px #969696;
+		}
+		a{
+			background-color: #141414;
+			padding: 2% 8% 2% 8%;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-family: $title;
+			letter-spacing: 3px;
+			font-size: 18px;
+			&:hover{
+				border: 4px solid $brand-primary;
+				color: $brand-primary;
+				font-weight: bold;
+				background-color: transparent;
+				text-decoration: none;
+			}
+		}
+	}
+}
