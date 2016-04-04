@@ -1,4 +1,4 @@
-
+/*TODOS LOS MIXINS*/
 @mixin background {
 	background:#E2E6E9;
 	padding:3%;
@@ -47,6 +47,10 @@
 		background: #D90000;
 	}	
 }
+/*--fin--*/
+.banner-header{
+	width:100%;
+}
 .box-columnistas-1{
 	background:#E2E6E9;
 	border:#778793;
@@ -54,6 +58,11 @@
 	width:90%;
 	position:absolute;
 	bottom:5%;
+		&:hover{ 
+			background: transparent;
+		    border: 2px solid rgba(226, 230, 233, 0.65);
+		    z-index: 5;
+	    }
 	img{
 		width: 45px;
 		border:2px solid white;
@@ -78,11 +87,18 @@
 	width:100%;
 	h1{
 		font-family: 'PT Sans';
+		margin-top: 10px;
 	}
+	/*fin*/
 	h3{
 		font-family: 'Oswald';
 		color: #778793;
 		padding-bottom:2%;
+	}
+	.thumbnail,.box-team{
+		&:hover{
+				transition: all .2s ease-in-out;
+			}
 	}
 	.box-team{
 		width: 100%;
@@ -161,7 +177,7 @@
 		.box-team{
 			padding:5% 5% 5%;
 			h4{
-				font-size: 1.5em;
+				font-size: 1em;
 			}
 			img{
 				width: 100%;
@@ -169,17 +185,25 @@
 			.box-columnistas-1{
 			padding: 2%;
 			small{
-				font-size: 1em;
+				font-size: 1.2em;
 			}
 			p{
 				font-size: 1.7em;
 			}
 			}
 		}
+		.nav-pager ul li a{
+		   padding: 1px;
+    		font-size: 0.9em;
+    		display: inline-block;
+    		font-family: 'PT Sans';
+    		margin:0;
+    	}
 	}
 }
 @media (min-width: 0px)and(max-width: 480px){
 	#ultimos-columnistas{
+		margin: 0 3px; 
 		.col-xs-5{
 			width: 100%;
 			text-align: center;
@@ -194,11 +218,15 @@
 			}
 			.box-columnistas-1{
 			padding: 2%;
-			
 			}
 		}
-		.nav-pager{
-			width: 100%;
-		}
+	}
+	#todo-columnistas{
+		.nav-pager ul li a{
+		   padding: 2px 6px;
+    		font-size: 0.6em;
+    		display: inline-block;
+    		font-family: 'PT Sans';
+    	}
 	}
 }
