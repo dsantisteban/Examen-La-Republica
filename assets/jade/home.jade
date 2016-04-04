@@ -3,63 +3,92 @@ html(lang='es-PE')
   include elements/head  
   body
     include helpers/mixins
-    section.block
-        .container
-            .row
-                h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
-                ul.list-inline
-                    li
+    .container
+        .row.one.text-center
+            h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+            ul.list-inline
+                li
+                    a(href="#")
                         i.fa.fa-facebook
+                    a(href="#")
                         i.fa.fa-twitter
+                    a(href="#")
                         i.fa.fa-google-plus
-                    +blocklista("bullet.gif","Hace 12 minutos") 
-                    +blocklista("bullet.gif","POLÍTICA")
-            .row 
-                .col-md-6
-                    +blockimage("img_grid_principal.jpg",1,"JNE impulsará campaña a favor  de la aprobación de la Reforma Electoral") 
-                .col-md-6
-                    +blockimage("img_grid_secundario.jpg",2,"Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3000 millones | FOTOS")
-                    +blockimage("img_grid_secundario.jpg",2,"Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO")
-            .row
-                #myCarousel.carousel.slide(data-ride='carousel')
-                    ol.carousel-indicators
-                        li.active(data-target='#myCarousel', data-slide-to='0')
-                        li(data-target='#myCarousel', data-slide-to='1')
-                        li(data-target='#myCarousel', data-slide-to='2')
-                        li(data-target='#myCarousel', data-slide-to='3')
-                    .carousel-inner(role='listbox')
-                        .item.active
-                            .row
-                                +imgslide("img-columnistas.jpg","img_blogueros.jpg")
-    
-                        .item
-                            .row
-                                +imgslide("img-columnistas.jpg","img_blogueros.jpg")
-            .row
-                .col-md-4
-                    +todosobre("img_especiales.jpg","Mercado de pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos","Todo sobre Mercaso de pases 2015")
-                    +todosobre("img_especiales.jpg","champions League","¿Podrá el Real Madrid conseguir la Undécima?","Todo sobre Champions League")
+                +blocklista("bullet.gif","Hace 12 minutos") 
+                +blocklista("bullet.gif","POLÍTICA")
+        .row.two
+            .col-md-6
+                +blockimage("img_grid_principal.jpg",1,"JNE impulsará campaña en favor  de la aprobación de la Reforma Electoral",1,2) 
+            .col-md-6
+                +blockimage("img_grid_secundario.jpg",2,"Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | FOTOS",2,1)
+                +blockimage("img_grid_secundario2.jpg",2,"Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO",1,1)
+        .row.three.mg-0.border-top1
+            +title("bg1","Columnistas",0)  
+            #myCarousel.carousel.slide
+                .carousel-inner(role='listbox')
+                    .item.active
+                        .row.mg-0
+                            +imgslide("img-columnistas.jpg","img_blogueros.jpg")
 
-                .col-md-4
-                    +todosobre("img_especiales_aside.jpg","Super ","Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes","Todo sobre Régimen laboral juvenil")
-                    +todosobre("img_especiales_aside.jpg","Super Bowl","Super Bowl XLIX:New Englan Patriots se consagró campión la NFL al ganar 28-24 a Seahawks | VIDEO","Todo sobre Super Bowl")
+                    .item
+                        .row.mg-0
+                            +imgslide("img-columnistas.jpg","img_blogueros.jpg")
+                    .item
+                        .row.mg-0
+                            +imgslide("img-columnistas.jpg","img_blogueros.jpg")                            
+                ol.carousel-indicators
+                    li.active(data-target='#myCarousel', data-slide-to='0')
+                    li.active(data-target='#myCarousel', data-slide-to='1')
+                    li(data-target='#myCarousel', data-slide-to='2')                        
+        .row.four
+            .col-md-4
+                +todosobre("img_especiales.jpg","Mercado de pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos"," Mercaso de pases 2015")
+                +todosobre("img_especiales_aside2.jpg","Champions League","¿Podrá el Real Madrid conseguir la Undécima"," Champions League")
 
-                .col-md-4
-                    +addimage("banner-aside-home.jpg")
-            .row
+            .col-md-4
+                +todosobre("img_especiales_aside.jpg","Super ","Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes"," Régimen laboral juvenil")
+                +todosobre("img_especiales_aside3.jpg","Super Bowl","Super Bowl XLIX: New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks | VIDEO"," Super Bowl")
+
+            .col-md-4
+                +addimage("banner-aside-home.jpg")
+        .row.five
+            .col-md-8  
                 h4 ÚLTIMAS NOTICIAS 
-                    a(href="")
-                        i.fa.fa-angle-double-down
-                +noticias("img-news-grid.jpg","bullet.gif","ico_comment.png","La actriz Emma Watson protagonizará 'La Bella y la Bestia'| VIDEO","La Actriz Emma Watson fue confirmada por Disney como la protagonista de 'La Bella y la Bestia' en la versión de carne y hueso","10","ESPÉCTACULOS","fa fa-youtube-play",1)
-
-
-
-
-
-
-                        
-                        
-
+                        a(href="")
+                            i.fa.fa-angle-double-down
+                block append new        
+                    +noticias("img_news.jpg","Emma Watson protagonizará 'La Bella y la Bestia' | VIDEO","La Actriz Emma Watson fue confirmada por Disney como la protagonista de 'La Bella y la Bestia' en la versión de carne y hueso","10","ESPECTÁCULOS","fa fa-youtube-play",1)
+                    +noticias("img_news2.jpg","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...","0","AREQUIPA","",0)  
+                    +noticias("img_news3.jpg","YouTube: hombre finge ahogarse y su perro lo rescata | FOTOS","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia. Así se puede comprobar en un video de YouTube que ha conmovido a miles...","10","ESPECTÁCULOS","fa fa-camera",1)
+                    block append new2   
+                        +noticias("img_news4.jpg","Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...","0","AREQUIPA","",0)
+                append new
+                append new
+                append new
+                append new
+                append new
+                append new
+                append new2
+            .col-md-4
+                +bg-rayas("img_sucribe.png",1,"Suscríbete"," a nuestro boletín",1)
+                +colum-otros("aweita","http://www.aweita.pe/","logo_aweita.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," Aewita.pe")
+                .fotos-destacadas.border-top2
+                    +title("bg2","FOTOS DESTACADAS",1) 
+                    +addimage("img_fotodes_prominent.jpg")
+                    a(href="#")
+                        h4 Líneas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
+                    +media("img_fotodes.jpg","Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie | FOTOS")
+                    +media("img_fotodes2.jpg","Alianza Lima vs. Fénix: íntimos se presentan en la 'Noche del Juramento Blanquiazul'  | VIDEOS Y FOTOS")
+                    +media("img_fotodes3.jpg","Tomas Berdych derrotó 3 - 0 a Rafael Nadal y avanzo en Australian Open | FOTOS")
+                    hr
+                .fotos-especiales.border-top2
+                    +title("bg2","FOTOS DESTACADAS",1)
+                +colum-otros("libero","http://www.libero.pe/","logo_libero.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," libero.pe")
+                +colum-otros("popular","http://www.elpopular.pe/","logo_popular.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," popular.pe")
+                +colum-otros("wapa","http://www.wapa.pe/","logo_wapa.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," wapa.pe")
+                +bg-rayas("img_pregunta.png",1,"La pregunta de hoy","",2)
+                +bg-rayas("img_reporteroc.png",1,"Reporte ciudadano","",3)
+                    a.btn-red(href="    ") Enviar más fotos
 
 
 
