@@ -35,9 +35,6 @@
         font-weight: bold; }
   #banner .foundation {
     margin-top: 1%; }
-  @media (min-width: 200px) {
-    #banner {
-      display: none; } }
 
 .social {
   margin-top: 4%; }
@@ -143,22 +140,10 @@
     right: 0;
     top: 5px;
     right: -1px; }
-@media (min-width: 200px) {
-  #intro .logo img {
-    margin: 0 auto; }
-  #intro .quotes {
-    width: 50%; }
-  #intro .editorial {
-    width: 50%;
-    float: right;
-    margin-top: -70px; } }
 
 header .navbar-nav {
   background-color: #ba1414;
   border-radius: 5px; }
-  @media (min-width: 200px) {
-    header .navbar-nav {
-      width: 100%; } }
   header .navbar-nav li a {
     color: #fff;
     font-size: 11px;
@@ -179,16 +164,10 @@ header .list2 {
     header .list2 .tema h4 {
       font-size: 14px;
       font-family: "Oswald", sans-serif; }
-    @media (min-width: 200px) {
-      header .list2 .tema {
-        display: none; } }
   header .list2 .lista {
     background-color: #e4e7ea;
     width: 88%;
     padding: 0.8%; }
-    @media (min-width: 200px) {
-      header .list2 .lista {
-        display: none; } }
     header .list2 .lista .carousel-control {
       background-image: none;
       width: 1%;
@@ -222,9 +201,6 @@ footer {
         margin-bottom: 8%; }
   footer .content {
     border-left: solid 2px gray; }
-    @media (min-width: 200px) {
-      footer .content {
-        display: none; } }
   footer .lista {
     list-style-type: none;
     padding-left: 2%;

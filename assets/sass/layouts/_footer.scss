@@ -22,9 +22,6 @@ footer{
 	}
 	.content{
 		border-left: solid 2px gray;
-		@media (min-width: 200px){
-			display: none;
-		}
 	}
 	.lista{
 		list-style-type: none;

@@ -38,9 +38,6 @@
     .foundation{
     	margin-top: 1%;
     }
-    @media (min-width: 200px){
-    	display: none;
-    }
 }
 .social {
   	margin-top: 4%;
@@ -170,27 +167,11 @@
     		right: -1px;
         }
     }
-    @media (min-width: 200px){
-    	.logo img{
-    		margin: 0 auto;
-    	}
-    	.quotes{
-    		width: 50%;
-    	}
-    	.editorial{
-    		width: 50%;
-    		float: right;
-    		margin-top: -70px;
-    	}
-    }
 }
 header{
 	.navbar-nav{
 		background-color: $brand-primary;
 		border-radius: 5px;
-		@media (min-width: 200px){
-			width: 100%;
-		}
 		li{
 			a{
 				color: #fff;
@@ -202,7 +183,7 @@ header{
     			&:hover{
     				background-color: rgba(115, 10, 10, 0.88);
     				color: #fff;
-    			}
+    			}	
 			}
 		}
 	}
@@ -217,17 +198,11 @@ header{
 				font-size: 14px;
 				font-family: $title;
 			}
-			@media (min-width: 200px){
-				display: none;
-			}
 		}
 		.lista{
 			background-color: #e4e7ea;
 			width:88%;
 			padding: 0.8%;
-			@media (min-width: 200px){
-				display: none;
-			}
 			.carousel-control{
 				background-image: none;
 				width: 1%;
