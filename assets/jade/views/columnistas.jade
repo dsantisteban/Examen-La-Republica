@@ -1,0 +1,174 @@
+doctype
+html(lang='es-PE')
+	head
+		include ../elements/head
+	body
+		include ../base/header
+		mixin imagen-1
+			.pull-left
+				img(src="assets/image/img_author_columnista.jpg" alt="...")
+		mixin imagen-2
+			.pull-left
+				img(src="assets/image/img-columnistas.jpg" alt="...")
+		mixin imagen-3
+			.pull-left
+				img(src="assets/image/img_author_columnista.jpg" alt="...")
+		mixin text-1-fecha
+			.text-center
+				small Lunes,14 de julio de 2015
+				h4 El gol de la muerte
+		mixin text-2-fecha
+			.text-center
+				small Lunes,14 de julio de 2015
+				h4 Dios ha muerto... tengo las manos cubiertas de sangre
+		mixin text-3-fecha
+			.text-center
+				small Lunes, 14 de julio de 2015
+				h4 ¿Cuál es tu queso favorito?
+		mixin column-augusto
+			.box-team.img-thumbnail
+				.caption
+					+text-1-fecha
+					.box-columnistas-1
+						+imagen-1
+						small Augusto Álvarez Rodrich
+						p Claro y directo
+		mixin column-mirko
+			.box-team.img-thumbnail
+				.caption
+					+text-2-fecha
+					.box-columnistas-1
+						+imagen-2
+						small Mirko Lauer
+						p Observador
+		mixin column-aldo
+			.box-team.img-thumbnail
+				.caption
+					+text-3-fecha
+					.box-columnistas-1
+						+imagen-3
+						small Aldo Miyashiro
+						p Chino de mi barrio
+		mixin column-francisco
+			.box-team.img-thumbnail
+				.caption
+					+text-1-fecha
+					.box-columnistas-1
+						+imagen-1
+						small Francisco Durand
+						p Tiro al blanco
+		mixin column-humberto
+			.box-team.img-thumbnail
+				.caption
+					+text-2-fecha
+					.box-columnistas-1
+						+imagen-2
+						small Humberto Campodónico
+						p Cristal de Mira
+		mixin column-javier
+			.box-team.img-thumbnail
+				.caption
+					+text-3-fecha
+					.box-columnistas-1
+						+imagen-3
+						small Javíer Ágreda
+						p Jaque Perpetuo
+		mixin img(photo)
+			case photo
+				when "img1"
+					.pull-left
+						img(src="assets/image/img_author_columnista.jpg" alt="...")
+				when "img2"
+					.pull-left
+						img(src="assets/image/img_blogueros.jpg" alt="...")
+		mixin datos(photo, title, parrafo)
+			.box-columnistas		
+				+img(photo)
+				small= title
+				p= parrafo
+		section#ultimos-columnistas
+			.container
+				.row
+					.col-xs-12
+						img(src="assets/image/banner-header.jpg").banner-header
+						h1 Columnistas
+						h3 LO ÚLTIMO EN COLUMNISTAS 
+							img(src="assets/image/double-arrow-bottom.png") 
+				i.fa.fa-angle-double-down
+				block append column1
+					.row
+						.col-md-4.col-xs-4.col-lg-4
+							+column-augusto
+						.col-md-4.col-xs-4.col-lg-4
+							+column-mirko
+						.col-md-4.col-xs-4.col-lg-4
+							+column-aldo
+					.row
+						.col-md-4.col-xs-4.col-lg-4
+							+column-francisco
+						.col-md-4.col-xs-4.col-lg-4
+							+column-humberto
+						.col-md-4.col-xs-4.col-lg-4
+							+column-javier
+				append column1
+				.row.text-center
+					a(href="#" class="bt-fr")
+						button TODAS LAS COLUMNAS
+		section#todo-columnistas
+			.container
+				.row
+					h3 TODOS LOS COLUMNISTAS 
+						img(src="assets/image/double-arrow-bottom.png")
+					span.fa.fa-angle-double-down
+				.nav-pager.row
+					.col-xs-12
+						ul.pager.disabled 
+							li
+								a(href="#" class="bt-1") TODOS
+							li
+								a(href="#") ABD
+							li
+								a(href="#") DEF
+							li
+								a(href="#") GHI
+							li
+								a(href="#") JKL
+							li
+								a(href="#") MNO
+							li
+								a(href="#") PQRS
+							li
+								a(href="#") TUV
+							li
+								a(href="#") WXYZ
+			.container
+				block append column2
+					.row
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img1","Francisco durand","Tiro al blanco")
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img2","Humberto Campodónico","Cristal de Mira")
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img1","Javier Ágreda","Jaque Perpetuo")
+						.col-md-3.col-lg-3.col-xs-8
+							+datos("img2","Javier Ágreda","Jaque Perpetuo"
+							)
+					.row
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img1","Francisco Durand","Delito de Opinión")
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img2","Humberto Campodónico","Actualidad Económica - Oscar Dancourt")
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img2","Javier Ágreda","Mirada externa")
+						.col-md-3.col-lg-3.col-xs-3
+							+datos("img1","Javier Ágreda","Defensa")
+				append column2
+				append column2
+				append column2
+				append column2
+				append column2
+				append column2
+
+
+		include ../base/footer
+		include ../elements/script

@@ -1,5 +1,5 @@
 @mixin bg($url){
-	background: url($url) repeat left top;
+	background: url($url) repeat;
 }
 @mixin radius($radius) {
 	-webkit-border-radius: $radius;

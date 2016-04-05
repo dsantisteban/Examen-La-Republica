@@ -1,7 +1,9 @@
+include helpers/mixins
 doctype html
 html(lang='es-PE')
   include elements/head  
   body
+    include base/header
     include helpers/mixins
     .container
         .row.one.text-center
@@ -128,6 +130,7 @@ html(lang='es-PE')
                 +colum-otros("popular","http://www.elpopular.pe/","logo_popular.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," popular.pe")
                 +colum-otros("wapa","http://www.wapa.pe/","logo_wapa.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," wapa.pe")             
                 +bg-rayas("img_reporteroc.png",1,"Reporte ciudadano","",3,1)
+    include base/footer
     include elements/script
 
                  
