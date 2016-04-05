@@ -1,0 +1,52 @@
+#contact
+	.container
+		.row
+			.col-lg-12.text-center
+				h1 Contáctese con nosotros
+				p.text-left Llena este formulario si necesita enviarnos alguna información acerca del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+				form.form-horizontal
+					.form-group.form-group-lg
+						.col-lg-10.col-lg-offset-1.text-left
+							input#formGroupInputLarge.form-control(type='text', placeholder='Nombres Completos')
+							input#formGroupInputLarge.form-control(type='text', placeholder='Correo Electronico')
+							input#formGroupInputLarge.form-control.m0(type='text', placeholder='Teléfonos')
+							label (Opcional)
+		.row
+			.col-lg-10.col-lg-offset-1.opciones
+				h4 Elija un Destinatario
+				.col-lg-6
+					.radio
+						label
+							input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+							|     Sugerencia para el sitio Web
+					.radio
+						label
+							input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+							|     Dirección Periodística
+					.radio
+						label
+							input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+							|     Direccion Comercial
+					.radio
+						label
+							input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+							|     Cartas al director
+					.radio
+						label
+							input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+							|     Promociones y productos del diario
+					.radio
+						label
+							input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+							|     Archivo Periodistico
+				.col-lg-6.ejemplos.hidden-sm
+					p.ejem (Ej: funcionamiento y mejoras para el sitio)
+					p.ejem (Ej: Sugerencia de Nota de prensa ) 
+					p.ejem (Ej: Publicidad en diarios o sitios Web)
+					p.ejem (Ej: denuncias, comentarios e impresiones)
+					p.ejem (Ej: Promociones, tablet, etc)
+					p.ejem (Ej: Ediciones Impresas/ Otros)
+		.row.send
+			.col-lg-10.col-lg-offset-1.text-center
+				textarea.form-control(rows='7', placeholder="Mensaje")
+				a(href="#") Enviar

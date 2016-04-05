@@ -1,0 +1,225 @@
+*{
+	font-family: $bodyfont;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: $brand-primary;
+    border: none;
+}
+.dropdown-menu{
+	background-color: $brand-primary;
+}
+#banner {
+  	background-color: #F4F5F7;
+  	padding: 1% 0;
+  	font-size: 1rem;
+  	ul {
+    	list-style-type: none;
+    	padding-left: 0;
+    	text-transform: uppercase;
+    	margin-bottom: 0;
+    	margin-top: 3.5%;
+    	font-size: 12px;
+    	font-family: $bodyfont;
+    	font-weight: bold; 
+	}
+   	li {
+    	display: inline-block;
+    	margin-right: 15px;
+    	a {
+      		color: #9398A1;
+      		font-weight: bold;
+      		&:hover{
+      			color: $brand-primary;
+      			text-decoration: none;
+      			font-weight: bold;
+      		}
+      	}
+    }
+    .foundation{
+    	margin-top: 1%;
+    }
+}
+.social {
+  	margin-top: 4%;
+  	.suscribe{
+    	background-color: $brand-primary;
+    	color: #fff;
+    	text-transform: uppercase;
+    	padding: 3px 5px;
+    	font-size: 1rem;
+    	margin-top: -2%;
+    }
+  	a {
+    	margin-left: 20px;
+    	font-size: 1.3rem;
+    	i{
+    		font-size: 20px;
+    	}
+    }
+  	.fa-facebook {
+    	color: #487DA8;
+    }
+  	.fa-twitter {
+    	color: #46B5D9; 
+    }
+  	.fa-google-plus {
+    	color: #D90000; 
+    }
+  	.fa-envelope {
+    	color: #FFEA56; 
+    }
+  	.fa-rss {
+    	color: #E28F32; 
+    }
+}
+.search{
+	border-left: solid 2px #d7dce1;
+	border-right: solid 2px #d7dce1;
+	width: 21%;
+	margin-top: 2%;
+	margin-left: 9%;
+	input[type=search] {
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
+		font-family: $bodyfont;
+		font-weight: bold;
+		font-size: 1.4em;
+		background: transparent url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 65px center;
+		border:none;
+		padding: 9px 10px 9px 10px;
+		width: 70px;	
+		transition: all .5s;
+		&:hover{
+			background: none;
+		}
+		&:focus {
+		width: 130px;
+		background-color: #fff;
+		border:none;
+		-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+		-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+		box-shadow: 0 0 5px rgba(109,207,246,.5);
+		}
+		&::-webkit-input-placeholder {
+		color: #999;
+		}
+	}
+}
+#intro{
+	.logo{
+		padding: 3%;
+	}
+	.quotes{
+		margin-top: 2.5%;
+		.sunday{
+			border:solid 2px $background-gray;
+			border-bottom: solid 2px #941010;
+			padding: 0 10px 0 10px;
+			float: right;
+			p{
+				font-weight: bold;
+				font-size: 14px;
+			}
+			span{
+				background-color:#941010;
+				padding: 3%;
+				color: #fff;
+				font-weight: bold;
+				position: relative;
+				top: -10px;
+			}
+		}
+	}
+	.editorial {
+        padding: 10px 0;
+        position: relative;
+        margin-top: 10px;
+        .image{
+            background-color: #2c3238;
+            padding: 6px 4px;
+            position: absolute;
+            width: 100%;
+        }
+        .title{
+            border: 1px solid #dbdbdb;
+            background-color: #fff;
+            border-radius: 15px;
+            position: absolute;
+            left: 7%;
+            padding: 2% 3% 3% 0%;
+            width: 84%;
+            text-align: center;
+            height: 62px
+        }
+        p:nth-child(1) {
+            font-weight: bold;
+            margin-bottom: 0;
+            font-size: 19px;
+        }
+        p:nth-child(2) {
+            font-style: italic;
+            margin-bottom: 0;
+        }
+        img:nth-child(3) {
+            position: absolute;
+            right: 0;
+            top: 5px;
+    		right: -1px;
+        }
+    }
+}
+header{
+	.navbar-nav{
+		background-color: $brand-primary;
+		border-radius: 5px;
+		li{
+			a{
+				color: #fff;
+				font-size: 11px;
+				font-weight: bold;
+				padding-top: 8px;
+    			padding-bottom: 8px;
+    			border-right: solid 3px rgba(115, 10, 10, 0.88);
+    			&:hover{
+    				background-color: rgba(115, 10, 10, 0.88);
+    				color: #fff;
+    			}	
+			}
+		}
+	}
+	.list2{
+		margin-top: 2%;
+		.tema{
+			background-color: #111417;
+			color: #fff;
+			width: 12%;
+			padding: 0.2%;
+			h4{
+				font-size: 14px;
+				font-family: $title;
+			}
+		}
+		.lista{
+			background-color: #e4e7ea;
+			width:88%;
+			padding: 0.8%;
+			.carousel-control{
+				background-image: none;
+				width: 1%;
+    			margin-left: -9px;
+    			margin-top: -5px
+			}
+			.left{
+				float: left;
+			}
+			i{
+				color: gray;
+				font-size: 10px;
+			}
+			a{
+				color: black;
+				padding: 1.3%;
+			}
+		}
+	}
+}
