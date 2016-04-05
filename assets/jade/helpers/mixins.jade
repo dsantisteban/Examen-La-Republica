@@ -284,6 +284,91 @@ mixin impresa(img,texto1,texto2)
                 h5
                     b= texto2
 
+//-MIXINS COLUMNISTAS
+mixin imagen-1
+    .pull-left
+        img(src="assets/image/img_author_columnista.jpg" alt="...")
+mixin imagen-2
+    .pull-left
+        img(src="assets/image/img-columnistas.jpg" alt="...")
+mixin imagen-3
+    .pull-left
+        img(src="assets/image/img_author_columnista.jpg" alt="...")
+mixin text-1-fecha
+    .text-center
+        small Lunes,14 de julio de 2015
+        h4 El gol de la muerte
+mixin text-2-fecha
+    .text-center
+        small Lunes,14 de julio de 2015
+        h4 Dios ha muerto... tengo las manos cubiertas de sangre
+mixin text-3-fecha
+    .text-center
+        small Lunes, 14 de julio de 2015
+        h4 ¿Cuál es tu queso favorito?
+mixin column-augusto
+    .box-team.img-thumbnail
+        .caption
+            +text-1-fecha
+            .box-columnistas-1
+                +imagen-1
+                small Augusto Álvarez Rodrich
+                p Claro y directo
+mixin column-mirko
+    .box-team.img-thumbnail
+        .caption
+            +text-2-fecha
+            .box-columnistas-1
+                +imagen-2
+                small Mirko Lauer
+                p Observador
+mixin column-aldo
+    .box-team.img-thumbnail
+        .caption
+            +text-3-fecha
+            .box-columnistas-1
+                +imagen-3
+                small Aldo Miyashiro
+                p Chino de mi barrio
+mixin column-francisco
+    .box-team.img-thumbnail
+        .caption
+            +text-1-fecha
+            .box-columnistas-1
+                +imagen-1
+                small Francisco Durand
+                p Tiro al blanco
+mixin column-humberto
+    .box-team.img-thumbnail
+        .caption
+            +text-2-fecha
+            .box-columnistas-1
+                +imagen-2
+                small Humberto Campodónico
+                p Cristal de Mira
+mixin column-javier
+    .box-team.img-thumbnail
+        .caption
+            +text-3-fecha
+            .box-columnistas-1
+                +imagen-3
+                small Javíer Ágreda
+                p Jaque Perpetuo
+mixin img(photo)
+    case photo
+        when "img1"
+            .pull-left
+                img(src="assets/image/img_author_columnista.jpg" alt="...")
+        when "img2"
+            .pull-left
+                img(src="assets/image/img_blogueros.jpg" alt="...")
+mixin datos(photo, title, parrafo)
+    .box-columnistas        
+        +img(photo)
+        small= title
+        p= parrafo
+
+
 
 
 

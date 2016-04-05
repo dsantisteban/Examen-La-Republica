@@ -1,4 +1,3 @@
-
 .one{
 	h1{
 		font-size: 63px;
@@ -7,6 +6,9 @@
 	h6{
 		font-weight: 700;
 		color:$color7;
+	}
+	.col-md-12 img{
+		width: 100%;
 	}
 }
 
@@ -210,6 +212,27 @@
 			text-decoration: underline;
 		}
 	}
+	.impresa{
+		a h5{
+			color:$color1;
+		}
+		.media-body{
+			vertical-align: middle;
+		}
+
+	}
+
+	a.btn-red{
+		display:block;
+		@include radius(5px);
+		width: 90%;
+		background-color:$color3;
+		margin:15px auto;
+		color:$color8;
+		font-weight:700;
+		font-size:16px;
+		padding:3px 0px;
+	}
 }
 .bg-rayas{
 	@include bg("../image/trama_square.png");
@@ -222,19 +245,9 @@
 			margin: -81px 0 19px;	
 		}
 	}
-
-}
-
-a.btn-red{
-	display:block;
-	@include radius(5px);
-	width: 90%;
-	background-color:$color3;
-	margin:15px auto;
-	color:$color8;
-	font-weight:700;
-	font-size:16px;
-	padding:3px 0px;
+	[src*="img_sd_reporteroc.jpg"] {
+		width: 100%;
+	}
 
 }
 
