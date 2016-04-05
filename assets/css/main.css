@@ -191,12 +191,14 @@ h5 {
   color: #1F1F1F; }
 .five .rcdro {
   padding: 10px 5px 0px; }
-.five h4 {
+.five .noticias h4 {
   font-weight: 700; }
-.five h4:nth-child(1) {
+.five .noticias h4:nth-child(1) {
   font-family: "Oswald", sans-serif;
   color: #687888;
   font-weight: lighter; }
+.five .columnas h3, .five .columnas h4, .five .columnas h5, .five .columnas h6 {
+  font-weight: 700; }
 .five .media {
   margin-bottom: 25px; }
 .five .colum-otros a img:hover {
@@ -259,6 +261,31 @@ h5 {
   border-top: 3px solid #969696;
   border-left: 3px solid #BCBCBC;
   height: 35px; }
+.five .fotos-especiales .box {
+  position: relative;
+  margin-bottom: 20px; }
+.five .fotos-especiales img {
+  width: 100%;
+  height: 138px; }
+.five .fotos-especiales .box-text2 {
+  position: absolute;
+  bottom: 5px;
+  left: 18px;
+  width: 260px;
+  background-color: rgba(254, 252, 252, 0.8); }
+  .five .fotos-especiales .box-text2 h5 {
+    margin: 10px 5px;
+    font-weight: 700; }
+  .five .fotos-especiales .box-text2 a {
+    color: black; }
+.five .ourblogueros img {
+  height: 60px;
+  border: #FEFCFC 3px solid;
+  box-shadow: 3px 3px 1px rgba(31, 31, 31, 0.5);
+  -webkit-box-shadow: 3px 3px 1px rgba(31, 31, 31, 0.5);
+  -moz-box-shadow: 3px 3px 1px rgba(31, 31, 31, 0.5); }
+.five .ourblogueros h6 {
+  text-decoration: underline; }
 
 .bg-rayas {
   background: url("../image/trama_square.png") repeat left top;

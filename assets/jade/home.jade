@@ -52,7 +52,7 @@ html(lang='es-PE')
             .col-md-4
                 +addimage("banner-aside-home.jpg")
         .row.five
-            .col-md-8  
+            .col-md-8.noticias  
                 h4 ÚLTIMAS NOTICIAS 
                         a(href="")
                             i.fa.fa-angle-double-down
@@ -69,8 +69,8 @@ html(lang='es-PE')
                 append new
                 append new
                 append new2
-            .col-md-4
-                +bg-rayas("img_sucribe.png",1,"Suscríbete"," a nuestro boletín",1)
+            .col-md-4.columnas
+                +bg-rayas("img_sucribe.png",1,"Suscríbete"," a nuestro boletín",1,1)
                 +colum-otros("aweita","http://www.aweita.pe/","logo_aweita.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," Aewita.pe")
                 .fotos-destacadas.border-top2
                     +title("bg2","FOTOS DESTACADAS",1) 
@@ -82,17 +82,52 @@ html(lang='es-PE')
                     +media("img_fotodes3.jpg","Tomas Berdych derrotó 3 - 0 a Rafael Nadal y avanzo en Australian Open | FOTOS")
                     hr
                 .fotos-especiales.border-top2
-                    +title("bg2","FOTOS DESTACADAS",1)
+                    +title("bg2","ESPECIALES",1)
+                    +especiales("img_especiales_aside.jpg","Régimen laboral juvenil")
+                    +especiales("img_especiales_2.jpg","COP20")
+                    +especiales("img_especiales_3.jpg","Concentración de Medios")
+                    +especiales("img_especiales_4.jpg","Especes peruanas en peligro de extinción")
+                    hr
+                .carlincatura.border-top1.text-center
+                    +title("bg1","CARLINCATURA DEL DÍA",1)
+                    a(href="")
+                        h4 Carlincaturas 30-01-15
+                    +addimage("img_carlincatura_sd.jpg")
+                    a.h5-red.text-center
+                        h5 Todas las Carlincaturas
+                    hr
+                .ourblogueros.border-top2
+                    +title("bg2","NUESTROS BLOGUEROS",1)
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    +blogueros("img_blogueros.jpg","Charlie Hebdo, historia que no debe repetirse")
+                    a.h5-red.text-center
+                        h5 Todas los blogs
+                    hr
+                .impresa.border-top1
+                    +title("bg1","EDICIÓN IMPRESA",1)
+                    a.text-center(href="#")
+                        h4 La República - Lima
+                    a(href="#")
+                        +addimage("img_impreso_sd_prominent.jpg")
+                    +impresa("img_impreso_sd.jpg","Extorsionan a menores en colegios","La República - Norte")
+                    +impresa("img_impreso_sd_politica_01.jpg","Lluvias en arequipa inundan casas y causan caos en las calles","La República - Sur")
+                    +impresa("img_impreso_sd.jpg","El Ojo de Oblitas","Domingo")
+                .infografias.fotos-especiales.border-top2
+                    +title("bg2","INFOGRAFÍAS",1)
+                    +especiales("img_especiales_aside.jpg","Histórico cierre de frontera")
+                    +especiales("img_especiales_3.jpg","Evolución de la pobreza e indigencia en América Latina")
+                hr
+                +bg-rayas("img_pregunta.png",1,"La pregunta de hoy","",2,2)
+
                 +colum-otros("libero","http://www.libero.pe/","logo_libero.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," libero.pe")
                 +colum-otros("popular","http://www.elpopular.pe/","logo_popular.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," popular.pe")
-                +colum-otros("wapa","http://www.wapa.pe/","logo_wapa.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," wapa.pe")
-                +bg-rayas("img_pregunta.png",1,"La pregunta de hoy","",2)
-                +bg-rayas("img_reporteroc.png",1,"Reporte ciudadano","",3)
-                    a.btn-red(href="    ") Enviar más fotos
-
-
-
-
+                +colum-otros("wapa","http://www.wapa.pe/","logo_wapa.jpg","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el","img_aweita.jpg","Juan Román Riquelme, el adiós al 'último 10' de Argentina","img_aweita2.jpg","Lewis Carroll: un día como hoy nació el autor de 'Alicia en el"," wapa.pe")             
+                +bg-rayas("img_reporteroc.png",1,"Reporte ciudadano","",3,1)
     include elements/script
 
                  

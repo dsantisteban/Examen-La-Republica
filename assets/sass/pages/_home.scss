@@ -112,14 +112,23 @@
 	.rcdro{
 		padding:10px 5px 0px;
 	}
-	h4{
-		font-weight: 700;
+	.noticias{
+		h4{
+			font-weight: 700;
+		}
+		h4:nth-child(1){
+			font-family: $oswald;
+			color:$color7;
+			font-weight: lighter;
+		}
+
 	}
-	h4:nth-child(1){
-		font-family:$oswald;
-		color:$color7;
-		font-weight: lighter;
+	.columnas{
+		h3,h4,h5,h6{
+			font-weight: 700;
+		}
 	}
+
 	.media{
 		margin-bottom:25px;
 	}
@@ -164,7 +173,43 @@
 		border-left:3px solid #BCBCBC;
 		height: 35px;
 	}
-		
+	.fotos-especiales{
+		.box{
+			position:relative;	
+			margin-bottom: 20px;	
+		}
+		img{
+			width: 100%;
+			height: 138px;
+		}
+
+		.box-text2{
+			position:absolute;
+			bottom:5px;
+			left:18px;
+			width: 260px;
+			background-color:rgba($color8,0.8);
+			h5{
+				margin:10px 5px;
+				font-weight: 700;
+			}
+			a{
+				color:black;
+			}
+		}
+	}
+	.ourblogueros{
+		img{
+			height: 60px;
+			border: $color8 3px solid;
+			box-shadow: 3px 3px 1px rgba($color11, 0.5);
+			-webkit-box-shadow: 3px 3px 1px rgba($color11, 0.5);
+			-moz-box-shadow: 3px 3px 1px rgba($color11, 0.5);
+		}
+		h6{
+			text-decoration: underline;
+		}
+	}
 }
 .bg-rayas{
 	@include bg("../image/trama_square.png");

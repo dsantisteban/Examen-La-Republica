@@ -68,6 +68,7 @@ mixin noticias(img1,texto,texto1,texto2,texto3,icon,visible)
             ul.list-unstyled.list-inline
                 li
                     a(href="#")
+                  
                         i.fa.fa-facebook
                     a(href="#")
                         i.fa.fa-twitter
@@ -90,38 +91,47 @@ mixin title(bg,texto,little)
             h5.oswald
                 span(class=bg)= texto     
 
-mixin bg-rayas(img,bold,texto,texto2,vista)
-    .bg-rayas.mgt-20
-        .box-text.text-center
-            span.img-circle
-                +addimage(img)           
-            h4
-                if bold==1
-                    b= texto
-                    span= texto2
-                else
-                    span= texto2
-            if vista==1
-                input
-                a.btn-red SUSCRIBIRSE
-            if vista==2
-                h5 ¿Cree usted en el premier Ana Jara debe renunciar?
-                form(role="form")
-                    ul.list-unstyled.text-center
-                        li
-                            input(type="radio" name="optradio")
-                            span Sí
-                        li 
-                            input(type="radio" name="optradio")
-                            span No
-                    a.btn-red(href="#") VOTAR
-                    a(href="#") 
-                        h5 Ver Resultados 
-            else if vista==3
-                +addimage("img_sd_reporteroc.jpg")
-                h5.text-left 
-                    b Estacionamiento indebido
-                h5.text-left ¿Está permitido que dejen su auto en reiteradas ocaciones todo la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+mixin bg-rayas(img,bold,texto,texto2,vista,bloque)
+    if bloque==1
+        block append bg-rayas
+            .bg-rayas.mgt-20
+                .box-text.text-center
+                    span.img-circle
+                        +addimage(img)           
+                    h4
+                        if bold==1
+                            b= texto
+                            span= texto2
+                        else
+                            span= texto2
+                    if vista==1
+                        input
+                        a.btn-red SUSCRIBIRSE
+                    if vista==2
+                        h5 ¿Cree usted en el premier Ana Jara debe renunciar?
+                        form(role="form")
+                            ul.list-unstyled.text-center
+                                li
+                                    input(type="radio" name="optradio")
+                                    span Sí
+                                li 
+                                    input(type="radio" name="optradio")
+                                    span No
+                            a.btn-red(href="#") VOTAR
+                            a(href="#") 
+                                h5 Ver Resultados 
+                    else if vista==3
+                        +addimage("img_sd_reporteroc.jpg")
+                        h5.text-left 
+                            b Estacionamiento indebido
+                        h5.text-left ¿Está permitido que dejen su auto en reiteradas ocaciones todo la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+    else if bloque==2
+        append bg-rayas
+        .bg-rayas
+            h5 
+                b La pregunta de ayer
+            h5 Cree usted que se militarizó la conmemoración del fallo de la Haya en Lima?
+
 
 mixin media(img,texto)  
     .media
@@ -145,6 +155,38 @@ mixin colum-otros(logo,url,img1,img,texto,img2,texto2,img3,texto3,img4,texto4,te
                 span Más en
                     a(href=url)= texto5       
                    
+mixin especiales(img,text)
+    .box
+        .box-img
+            +addimage(img)
+        .box-text2
+            a(href="    ")
+                h5.text-center= text
+
+mixin blogueros(img,texto)  
+    .media
+        .media-left.media-middle
+            a(href="#")
+                +addimage(img)
+        .media-body.text-left
+            a(href="")
+                h6 Augusto Álvarez Rodrich
+            a(href="")  
+                h5
+                    b= texto
+mixin impresa(img,texto1,texto2)  
+    .media
+        .media-left.media-middle
+            a(href="#")
+                +addimage(img)
+        .media-body.text-left
+            a(href="")
+                h4= texto1
+            a(href="")  
+                h5
+                    b= texto2
+
+
 
 
                         
