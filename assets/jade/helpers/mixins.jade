@@ -1,0 +1,209 @@
+//All
+mixin addimage(img)
+    img(src="assets/image/"+img, alt="")
+//Block
+mixin blockimage(img,h,texto) 
+    .block  
+        .blockimg
+            +addimage(img)
+        .blocktext
+            if h==1
+                a(href="#")
+                    h1= texto 
+            else if h==2
+                a(href="#")
+                    h3= texto
+                   
+mixin blocklista(img,texto)        
+    li
+        h6
+             span
+                +addimage(img)
+                span= texto
+
+mixin imgslide(img1,img2)
+    block append slide
+        .col-md-2.col-xs-6.text-center.pd-0
+            +addimage(img1)
+            h6 Mario Vargas Llosa
+            h5 Megarrenincia apulpinante
+        .col-md-2.col-xs-6.text-center.pd-0
+            +addimage(img2)
+            h6 Augusto Álvarez Rodrich 
+            h5 Respuesta a una derrota estridente
+    append slide    
+    append slide  
+    
+mixin todosobre(img,texto1,texto2,texto3)
+    .rcdro
+        h4= texto1
+        .block 
+            .blockimg
+                +addimage(img)
+            .blocktext
+                a(href="    ")
+                    h4= texto2
+        h5 Todo sobre
+            b= texto3
+
+mixin gif-icon(img,icon,visible)
+    if visible==1
+        +addimage(img)
+        i(class=icon)
+     
+mixin newsocial(img2,img3,texto3)   
+        h6
+            span
+                +addimage(img2)
+                +addimage(img3)
+                span= texto3 
+mixin noticias(img1,texto,texto1,texto2,texto3,icon,visible)
+    .media
+        h6 Hace 1 hora 12 mins
+        h4= texto
+        .media-left.media-middle
+            +addimage(img1)
+        .media-body
+            h5= texto1 
+            ul.list-unstyled.list-inline
+                li
+                    a(href="#")
+                  
+                        i.fa.fa-facebook
+                    a(href="#")
+                        i.fa.fa-twitter
+                    a(href="#")
+                        i.fa.fa-google-plus    
+                li
+                    +newsocial("bullet.gif","ico_comment.png",texto2)
+                li
+                    +blocklista("bullet.gif",texto3)
+                li
+                    +gif-icon("bullet.gif",icon,visible)
+        hr
+mixin title(bg,texto,little)   
+    if little==0
+        a(href="#")
+            h3.oswald
+                span(class=bg)= texto
+    else if little==1
+        a(href="#")
+            h5.oswald
+                span(class=bg)= texto     
+
+mixin bg-rayas(img,bold,texto,texto2,vista,bloque)
+    if bloque==1
+        block append bg-rayas
+            .bg-rayas.mgt-20
+                .box-text.text-center
+                    span.img-circle
+                        +addimage(img)           
+                    h4
+                        if bold==1
+                            b= texto
+                            span= texto2
+                        else
+                            span= texto2
+                    if vista==1
+                        input
+                        a.btn-red SUSCRIBIRSE
+                    if vista==2
+                        h5 ¿Cree usted en el premier Ana Jara debe renunciar?
+                        form(role="form")
+                            ul.list-unstyled.text-center
+                                li
+                                    input(type="radio" name="optradio")
+                                    span Sí
+                                li 
+                                    input(type="radio" name="optradio")
+                                    span No
+                            a.btn-red(href="#") VOTAR
+                            a(href="#") 
+                                h5 Ver Resultados 
+                    else if vista==3
+                        +addimage("img_sd_reporteroc.jpg")
+                        h5.text-left 
+                            b Estacionamiento indebido
+                        h5.text-left ¿Está permitido que dejen su auto en reiteradas ocaciones todo la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+    else if bloque==2
+        append bg-rayas
+        .bg-rayas
+            h5 
+                b La pregunta de ayer
+            h5 Cree usted que se militarizó la conmemoración del fallo de la Haya en Lima?
+
+
+mixin media(img,texto)  
+    .media
+        .media-left.media-middle
+            a(href="#")
+                +addimage(img)
+        .media-body.text-left
+            a(href="")  
+                h5
+                    b= texto                         
+mixin colum-otros(logo,url,img1,img,texto,img2,texto2,img3,texto3,img4,texto4,texto5)
+    .rcdro.text-center.colum-otros(class=logo)
+        a(href=url)
+            +addimage(img1)   
+        +media(img,texto)
+        +media(img2,texto2)
+        +media(img3,texto3)
+        +media(img4,texto4)
+        .btn-last
+            h5
+                span Más en
+                    a(href=url)= texto5       
+                   
+mixin especiales(img,text)
+    .box
+        .box-img
+            +addimage(img)
+        .box-text2
+            a(href="    ")
+                h5.text-center= text
+
+mixin blogueros(img,texto)  
+    .media
+        .media-left.media-middle
+            a(href="#")
+                +addimage(img)
+        .media-body.text-left
+            a(href="")
+                h6 Augusto Álvarez Rodrich
+            a(href="")  
+                h5
+                    b= texto
+mixin impresa(img,texto1,texto2)  
+    .media
+        .media-left.media-middle
+            a(href="#")
+                +addimage(img)
+        .media-body.text-left
+            a(href="")
+                h4= texto1
+            a(href="")  
+                h5
+                    b= texto2
+
+
+
+
+                        
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
+

@@ -1,0 +1,26 @@
+@mixin bg($url){
+	background: url($url) repeat left top;
+}
+@mixin radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin family700($fuente){
+	font-family:$fuente;
+	font-weight:700;
+}
+@mixin btn-social($color){
+	font-size:18px;
+	color:$color;
+	@include radius(5px);
+	border-bottom:4px solid $color;
+}
+@mixin transition($time) {
+	-webkit-transition:$time ease;
+	-moz-transition:$time ease;
+	-ms-transition:$time ease;
+	-o-transition:$time ease;
+	transition:$time ease;
+}
+

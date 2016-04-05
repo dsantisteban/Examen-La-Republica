@@ -1,274 +1,71 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
-* {
-  font-family: "PT Sans", sans-serif; }
+/*
+Error: Invalid CSS after "...ns', sans-serif": expected "{", was ";"
+        on line 3 of sass/helpers/_variables.scss
+        from line 2 of sass/main.scss
 
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: #ba1414;
-  border: none; }
+1: <<<<<<< HEAD
+2: //Fonts
+3: $bodyfont:'PT Sans', sans-serif;
+4: $title:'Oswald', sans-serif;
+5: 
+6: //Colors
+7: $brand-primary: #ba1414;
+8: $background-gray: #eaeaea; 
 
-.dropdown-menu {
-  background-color: #ba1414; }
-
-#banner {
-  background-color: #F4F5F7;
-  padding: 1% 0;
-  font-size: 1rem; }
-  #banner ul {
-    list-style-type: none;
-    padding-left: 0;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    margin-top: 3.5%;
-    font-size: 12px;
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold; }
-  #banner li {
-    display: inline-block;
-    margin-right: 15px; }
-    #banner li a {
-      color: #9398A1;
-      font-weight: bold; }
-      #banner li a:hover {
-        color: #ba1414;
-        text-decoration: none;
-        font-weight: bold; }
-  #banner .foundation {
-    margin-top: 1%; }
-
-.social {
-  margin-top: 4%; }
-  .social .suscribe {
-    background-color: #ba1414;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 3px 5px;
-    font-size: 1rem;
-    margin-top: -2%; }
-  .social a {
-    margin-left: 20px;
-    font-size: 1.3rem; }
-    .social a i {
-      font-size: 20px; }
-  .social .fa-facebook {
-    color: #487DA8; }
-  .social .fa-twitter {
-    color: #46B5D9; }
-  .social .fa-google-plus {
-    color: #D90000; }
-  .social .fa-envelope {
-    color: #FFEA56; }
-  .social .fa-rss {
-    color: #E28F32; }
-
-.search {
-  border-left: solid 2px #d7dce1;
-  border-right: solid 2px #d7dce1;
-  width: 21%;
-  margin-top: 2%;
-  margin-left: 9%; }
-  .search input[type=search] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 1.4em;
-    background: transparent url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 65px center;
-    border: none;
-    padding: 9px 10px 9px 10px;
-    width: 70px;
-    transition: all .5s; }
-    .search input[type=search]:hover {
-      background: none; }
-    .search input[type=search]:focus {
-      width: 130px;
-      background-color: #fff;
-      border: none;
-      -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
-      -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
-      box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
-    .search input[type=search]::-webkit-input-placeholder {
-      color: #999; }
-
-#intro .logo {
-  padding: 3%; }
-#intro .quotes {
-  margin-top: 2.5%; }
-  #intro .quotes .sunday {
-    border: solid 2px #eaeaea;
-    border-bottom: solid 2px #941010;
-    padding: 0 10px 0 10px;
-    float: right; }
-    #intro .quotes .sunday p {
-      font-weight: bold;
-      font-size: 14px; }
-    #intro .quotes .sunday span {
-      background-color: #941010;
-      padding: 3%;
-      color: #fff;
-      font-weight: bold;
-      position: relative;
-      top: -10px; }
-#intro .editorial {
-  padding: 10px 0;
-  position: relative;
-  margin-top: 10px; }
-  #intro .editorial .image {
-    background-color: #2c3238;
-    padding: 6px 4px;
-    position: absolute;
-    width: 100%; }
-  #intro .editorial .title {
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-    border-radius: 15px;
-    position: absolute;
-    left: 7%;
-    padding: 2% 3% 3% 0%;
-    width: 84%;
-    text-align: center;
-    height: 62px; }
-  #intro .editorial p:nth-child(1) {
-    font-weight: bold;
-    margin-bottom: 0;
-    font-size: 19px; }
-  #intro .editorial p:nth-child(2) {
-    font-style: italic;
-    margin-bottom: 0; }
-  #intro .editorial img:nth-child(3) {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    right: -1px; }
-
-header .navbar-nav {
-  background-color: #ba1414;
-  border-radius: 5px; }
-  header .navbar-nav li a {
-    color: #fff;
-    font-size: 11px;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-right: solid 3px rgba(115, 10, 10, 0.88); }
-    header .navbar-nav li a:hover {
-      background-color: rgba(115, 10, 10, 0.88);
-      color: #fff; }
-header .list2 {
-  margin-top: 2%; }
-  header .list2 .tema {
-    background-color: #111417;
-    color: #fff;
-    width: 12%;
-    padding: 0.2%; }
-    header .list2 .tema h4 {
-      font-size: 14px;
-      font-family: "Oswald", sans-serif; }
-  header .list2 .lista {
-    background-color: #e4e7ea;
-    width: 88%;
-    padding: 0.8%; }
-    header .list2 .lista .carousel-control {
-      background-image: none;
-      width: 1%;
-      margin-left: -9px;
-      margin-top: -5px; }
-    header .list2 .lista .left {
-      float: left; }
-    header .list2 .lista i {
-      color: gray;
-      font-size: 10px; }
-    header .list2 .lista a {
-      color: black;
-      padding: 1.3%; }
-
-footer {
-  background-color: #eaeaea;
-  padding: 3%; }
-  footer .logo {
-    margin-top: 11%; }
-    @media (min-width: 200px) {
-      footer .logo {
-        text-align: center; }
-        footer .logo img {
-          margin: 0 auto; } }
-    footer .logo h3 {
-      font-weight: bold;
-      font-family: "PT Sans", sans-serif; }
-    footer .logo p {
-      margin: 0; }
-      footer .logo p:nth-child(5) {
-        margin-bottom: 8%; }
-  footer .content {
-    border-left: solid 2px gray; }
-  footer .lista {
-    list-style-type: none;
-    padding-left: 2%;
-    padding-right: 0; }
-    footer .lista a {
-      color: #535353;
-      font-size: 13px; }
-      footer .lista a:hover {
-        color: #ba1414;
-        text-decoration: none;
-        font-weight: bold; }
-
-#contact h1 {
-  font-family: "PT Sans", sans-serif;
-  font-weight: bold;
-  color: #000;
-  font-size: 60px;
-  margin: 4% 0 4% 0; }
-#contact p {
-  font-size: 16.5px;
-  text-align: justify;
-  margin-bottom: 6%; }
-#contact form input {
-  border: 1px solid #969696;
-  margin-bottom: 5%;
-  background-color: #eeeeee;
-  box-shadow: inset 5px 4px 8px 2px #969696;
-  -webkit-box-shadow: inset 5px 4px 8px 2px #969696;
-  -moz-box-shadow: inset 5px 4px 8px 2px #969696;
-  -o-box-shadow: inset 5px 4px 8px 2px #969696; }
-#contact form .m0 {
-  margin-bottom: 0; }
-#contact .opciones {
-  margin-bottom: 4%; }
-  #contact .opciones h4 {
-    margin-left: 4%;
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 20px; }
-  #contact .opciones .ejemplos {
-    margin-top: 12px; }
-    #contact .opciones .ejemplos .ejem {
-      font-size: 12px;
-      margin-bottom: 2%; }
-#contact .send {
-  margin-bottom: 5%; }
-  #contact .send textarea {
-    border: 1px solid #969696;
-    margin-bottom: 5%;
-    background-color: #eeeeee;
-    box-shadow: inset 5px 4px 8px 2px #969696;
-    -webkit-box-shadow: inset 5px 4px 8px 2px #969696;
-    -moz-box-shadow: inset 5px 4px 8px 2px #969696;
-    -o-box-shadow: inset 5px 4px 8px 2px #969696; }
-  #contact .send a {
-    background-color: #141414;
-    padding: 2% 8% 2% 8%;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Oswald", sans-serif;
-    letter-spacing: 3px;
-    font-size: 18px; }
-    #contact .send a:hover {
-      border: 4px solid #ba1414;
-      color: #ba1414;
-      font-weight: bold;
-      background-color: transparent;
-      text-decoration: none; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+sass/helpers/_variables.scss:3
+sass/main.scss:2
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:654:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:663:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:309:in `to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ns', sans-serif\": expected \"{\", was \";\"\A         on line 3 of sass/helpers/_variables.scss\A         from line 2 of sass/main.scss\A \A 1: <<<<<<< HEAD\A 2: //Fonts\A 3: $bodyfont:'PT Sans', sans-serif;\A 4: $title:'Oswald', sans-serif;\A 5: \A 6: //Colors\A 7: $brand-primary: #ba1414;\A 8: $background-gray: #eaeaea; "; }
